@@ -1,7 +1,9 @@
+import Expenses from "./components/Expenses";
+
 function App() {
   return (
     <div className="App">
-      <h1>React Application</h1>
+      <Expenses />
     </div>
   );
 }
