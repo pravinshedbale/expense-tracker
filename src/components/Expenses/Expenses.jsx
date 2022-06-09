@@ -1,3 +1,4 @@
+import Card from "../UI/Card";
 import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 const Expenses = () => {
@@ -23,11 +24,11 @@ const Expenses = () => {
     },
   ];
   return (
-    <div className="expenses">
+    <Card className="expenses">
       {expenses.map((expense) => (
         <ExpenseItem expense={expense} key={expense.id} />
       ))}
-    </div>
+    </Card>
   );
 };
 
